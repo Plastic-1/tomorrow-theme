@@ -263,6 +263,11 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 		call <SID>X("ColorColumn", "", s:line, "none")
 	end
 
+	" Vim-Signify Highlighting
+	call <SID>X("SignifySignAdd", "55A555", "", "bold")
+	call <SID>X("SignifySignDelete", s:red, "", "bold")
+	call <SID>X("SignifySignChange", s:yellow, "", "bold")
+
 	" Standard Highlighting
 	call <SID>X("Comment", s:comment, "", "")
 	call <SID>X("Todo", s:comment, s:background, "")
