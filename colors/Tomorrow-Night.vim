@@ -273,8 +273,13 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	" Vim-Signify Highlighting
 	call <SID>X("SignifySignAdd", "55A555", "", "bold")
-	call <SID>X("SignifySignDelete", s:red, "", "bold")
-	call <SID>X("SignifySignChange", s:yellow, "", "bold")
+	call <SID>X("SignifySignChange", "bbbb00", "", "bold")
+	call <SID>X("SignifySignDelete", "ff2222", "", "bold")
+
+	" Gitgutter Highlighting
+	call <SID>X("GitGutterAdd", "009900", "", "bold")
+	call <SID>X("GitGutterChange", "bbbb00", "", "bold")
+	call <SID>X("GitGutterDelete", "ff2222", "", "bold")
 
 	" Standard Highlighting
 	call <SID>X("Comment", s:comment, "", "")
